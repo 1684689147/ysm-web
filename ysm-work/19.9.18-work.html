@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>19.09.18 作业</title>
+</head>
+<body>
+    <div id="result"></div>
+    <input type="text" id='N1' placeholder="请输入数字"> 
+    <span>+</span>
+    <input type="text" id='N2' placeholder="请输入数字">
+    <button id="btn">点击计算</button>
+    <script>
+       var a ='';
+       result.innerHTML = a;
+       var N1 = document.getElementById('N1');
+       var N2 = document.getElementById('N2');
+       var btn = document.getElementById('btn');
+       btn.onclick = function(){
+       	if(isNaN(N1.value)||isNaN(N2.value)==true){
+       		alert("您输入有误，请输入数字")
+       	}else{
+//         console.log(N1.value);
+           var n1 = parseInt(N1.value);
+//         console.log(N2.value);
+           var n2 = parseInt(N2.value);
+           result.innerHTML = n1+n2;
+       	}
+       }
+    </script>
+</body>
+</html>
