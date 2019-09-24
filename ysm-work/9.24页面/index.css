@@ -1,0 +1,146 @@
+body{
+	padding: 0;
+	margin: 0;
+	font-family: "Helvetica","Arial",sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+/*<!--顶部部分-->*/
+/*顶部头部*/
+.header .header-top{
+	width:100%;
+	height:200px;
+	background-color: #3f51b5;	
+   /*position: absolute;*/
+}
+ /*<!--1.1.顶部头部logo图-->*/
+.header .header-top #logo{
+	background: url(img/site-logo.png);
+    background-size: 100%;
+    height: 120px;
+    width: 120px;
+    position: relative;
+    top: 15px;
+    margin:  0 auto;
+}
+/*1.2顶部头部文字*/
+  .header .header-top  #text{
+	display: block;
+    text-align: center;
+    margin-bottom: 10px;
+   color: white;
+    position: relative;
+    top: 25px;
+}
+.header .header-end{
+	width:100%;
+	height:45px;
+	background-color:#3a4ba7 ;
+}
+ .header .header-end  a{
+   line-height: 42px;
+    color: #fff;
+   padding-left: 150px;
+   text-decoration: none;
+ }
+.header .header-end .top{
+	width: 900px;
+	height: 45px;
+	margin: 0 auto;
+}
+.banner .width{
+   background-color: #fefefe;
+    max-width: 900px;
+    margin: auto;
+    padding: 8px;
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);   
+}
+.banner .width #title h1{
+   color: inherit;
+     display: flex;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: normal;
+    overflow: hidden;
+}
+.banner .width_text{
+     max-width: 700px;
+    margin: 0 auto;
+}
+.banner .width_text .little_text{
+    font-size: 14px;
+    letter-spacing: 0;
+    margin: 0 0 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(0,0,0,.54);
+    width: 407px;
+}
+
+
+.banner .width_text h3{
+   font-size: 24px;
+    line-height: 32px;
+}
+.banner .width_img{
+     max-width: 700px;
+    margin: 0 auto;
+}
+.banner .width_img h3{
+   font-size: 24px;
+    line-height: 32px;
+}
+
+.banner .width_img img {
+	
+	width: 190px;
+    height: 190px;
+	
+}
+.banner .width_img .img{
+	margin-left:20px ;
+	position: relative;
+}
+  .banner .width_img span#name1, span#name2 {
+    color: #ffffff;
+    font-weight: bolde;
+    position: relative;
+    right: 180px;
+    bottom: 20px;
+}
+.banner .width_img span#over1, span#over2 {
+    display: inline-block;
+    width: 190px;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.3);
+    margin-left: -35.5%;
+    position: absolute;
+    top:137px;
+}
+
+
+.footer{
+    
+    height: 100px;
+    padding: 32px 16px;
+    color: #9e9e9e;
+    background-color: #424242; 
+    margin-top: 30px;
+}
+
+.footer #logo{
+    text-align: center;
+    line-height: 36px;
+    margin-bottom: 0;
+    margin-right: 16px;
+}
+.footer #logo span { 
+   color: #fff;
+   
+}
+.footer #logo  #sp{
+  color: #9e9e9e;
+  margin-left: 15px;
+  
+}
