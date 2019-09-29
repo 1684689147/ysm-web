@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+      .a{
+            width:200px;
+            height:200px;
+        }
+        .b{
+            background-color: red;
+        }
+        
+        .c{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+        <div id="mydiv" class="a b "></div>
+       <button id="bn">按钮</button>
+        <script>
+           var div =document.getElementById('mydiv')
+           var bn =document.getElementById('bn')
+          bn.onclick=function(){
+             div.className=' a c'
+
+          }
+        </script>
+
+</body>
+</html>

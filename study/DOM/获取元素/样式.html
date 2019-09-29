@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            width: 500px;
+            height: 500px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div style="background-color: blue"></div>
+    <script>
+   var div=document.getElementsByTagName('div')
+   console.log(div[0].style.background);
+   div[0].style.background='blue'
+    
+    </script>
+</body>
+</html>

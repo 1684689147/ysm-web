@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1"></h1>
+  <p id="p"></p>
+  <ul id="ul"></ul>
+    <script>
+  //用一个变量承接在文档中创建一个div元素
+  var div = document.createElement("div");
+	//将已经创建的元素放在想放的位置;
+	document.body.appendChild(div);
+
+
+//创建一个h1标签  把创建的a标签放在h1标签内
+    var h1=document.getElementById('h1')
+     var  a=document.createElement('a');
+     h1.appendChild(a);
+
+ 
+
+
+     var p=document.getElementById('p')
+     var  span=document.createElement('span');
+     p.appendChild(a);
+
+
+
+
+     //在创建ul里面放3个li
+ 
+     var ul=document.getElementById('ul')
+     //方法一：
+     var  li=document.createElement('li');
+     var  li2=document.createElement('li');
+     var  li3=document.createElement('li');   
+     ul.appendChild(li1);
+     ul.appendChild(li2);
+     ul.appendChild(li2);
+
+     //方法2
+    for(var i=0;i<3;i++){
+        var  li=document.createElement('li');
+         ul.appendChild(li);
+    }
+     
+
+
+    </script>
+</body>
+</html>
