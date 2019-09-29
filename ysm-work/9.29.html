@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <title>Document</title>
+    <style>
+    	.for{
+    		width: 450px;
+    		height: 400px;
+    		background-color: cornsilk;
+    		margin: 60px auto;
+    		padding-left: 50px;
+    		padding-top: 50px;
+    	}
+    	input{
+    		width:350px;
+    		height:40px;
+    		margin-top: 30px;
+    		
+    	}
+    	span{
+    		color: black;
+    	}
+        #in1{
+        	background-color: green;
+        	margin-left: 38px;
+        }
+    </style>
+</head>
+<body>
+	<div class="for">	
+    账号:<input type="text" id="z">
+    <span id="t1">	
+    </span>
+   <br>
+    密码:<input type="password" id="m">
+    <span id="t2"></span>
+  
+    <input type="button" id="in1" value="注册">
+    </div>
+   <script>
+       var z = document.getElementById('z');
+       var m = document.getElementById('m');
+       var in1 = document.getElementById('in1');
+       var t1= document.getElementById('t1');
+       var t2= document.getElementById('t2');
+       
+       var i = ["tom","jack","lili"];
+        z.onblur = function(){
+             if(z.value ==i[0] || z.value == i[1] ||z.value == i[2]){
+             	t1.innerText = '该用户名重复';
+             }else{
+             	t2.innerText = '';
+             }  
+        }
+        in1.onclick = function(){
+        	if(m.value == '' || m.value == ''  ){
+        		alert('账号密码不能为空');
+        		z.value = '';
+        		m.value = '';
+        	}else if(t1.innerText == "" &t2.innerText == "" ){
+        		alert("注册成功");
+        		z.value = '';
+        		m.value = '';
+        		
+        	}else if(t1.innerText == '该用户名重复'){
+        		alert('该用户名重复，请重新输入');
+        		z.value = '';
+        		m.value = '';
+        	}
+        }
+    </script>
+</body>
+<ml>
+
