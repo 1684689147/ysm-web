@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>9.19练习</title>
+</head>
+<body>
+    <input type="date" id="dat1">
+    <script>
+         var dat1 = document.getElementById('dat1');
+         var nw = confirm('女王请点确定');//返回值肯定是布尔值.
+         console.log(nw);
+         dat1.oninput = function(){
+            //  alert(dat1.value);
+            var d = dat1.value;
+            var pan = (d == '2019-03-08');
+            if(nw && pan){
+                alert("五折优惠");
+            }else{
+                alert("无优惠");
+            }
+         }
+    </script>
+</body>
+</html>

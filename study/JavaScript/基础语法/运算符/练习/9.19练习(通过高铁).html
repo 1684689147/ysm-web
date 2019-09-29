@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>9.19练习</title>
+</head>
+<body>
+    <script>
+       //方法一:
+       var sfz = confirm('您是否带了身份证');
+       var hcp = confirm('您是否带了火车票');
+       sfz==true||hcp==true?alert("可通过"):alert('不通过');
+       
+
+      //方法二:
+      //  var sfz = confirm('您是否带了身份证');
+      //  var hcp = confirm('您是否带了火车票');
+      //  alert(sfz||hcp?'可以进入':'不可以进入');
+
+
+      //方法三:
+      //    var sfz = confirm('您是否带了身份证');
+      //    var hcp = confirm('您是否带了火车票');
+      //    confirm('你是否有身份证') || confirm('你是否有高铁票')?alert('开门'):alert('再见');
+      // 或 alert(confirm('你是否有身份证')|confirm('你是否有高铁票')?'开门':'再见');
+    </script>
+</body>
+</html>

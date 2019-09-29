@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>9.19练习</title>
+</head>
+<body>
+    <input type="date" id="dat1">
+    <!-- 1.3.8妇女节,该饭店对女性顾客5折优惠,其他顾客不优惠.对优惠和不优惠的顾客分别显示弹窗.
+
+         2.使用confirm函数和使用oninput方法
+
+         3.使用三目运算符做判断 -->
+ <script>
+         var dat1 = document.getElementById('dat1');
+         var nw = confirm('请确定是女性顾客');//返回值肯定是布尔值
+         dat1.oninput = function(){
+            // alert(dat1.value);
+            //dat1.value == '2019-03-09'  返回值 对 错
+            //true/false         &&逻辑或   true/false
+            dat1.value == "2019-03-08" && nw ? alert("打五折优惠"):alert("无优惠");
+        }
+    </script>
+</body>
+</html>

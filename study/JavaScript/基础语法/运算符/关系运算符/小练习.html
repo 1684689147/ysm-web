@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>小练习</title>
+</head>
+<body>
+    <input type="text" id="in1" placeholder="请输入您的年龄">
+    <button id="btn">点击</button>
+    <script>
+       var in1 = document.getElementById('in1');
+       var btn = document.getElementById('btn');
+       btn.onclick=function(){
+           if(in1<6){
+               alert("免费");
+           }else if(in1>85){
+               alert("打五折");
+           }else{
+            var n1 = parseInt(in1.value);
+           result.innerHTML = n1;
+           }
+       }
+    </script>
+</body>
+</html>
