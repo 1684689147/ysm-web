@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+     #box{
+            width: 400px;
+          height: 300px;
+        background-color: blue;
+        }
+    #mydiv{
+       width: 100px;
+       height: 100px;
+        background-color: red;
+        color: azure;
+        font-size: 14px;
+    }
+    </style>
+</head>
+<body>
+    <div id="box">
+        
+    <div id="mydiv"></div>
+    </div>
+
+    <script>
+    var mydiv=document.getElementById('mydiv')
+    //点击事件
+    mydiv.onclick=function(){
+
+        alert('点击事件')
+    }
+
+    //双击事件
+     mydiv.ondblclick=function(){
+
+         alert('双击事件')
+           }
+      //鼠标按下
+      mydiv.onmousedown=function(){
+
+            mydiv.innerHTML='按下事件'
+         }
+     //鼠标抬起
+      mydiv.onmouseup=function(){
+
+           mydiv.innerHTML=''
+       }
+    //鼠标移动
+    //需要注意只要鼠标移动就触发
+       //1.种
+       document.onmousemove=function(){
+           console.log('移动了')
+        }
+        //2.种
+        mydiv.onmousemove=function(){
+
+            console.log('移动了')
+          }
+      //鼠标移入
+      //会触发冒泡或者说（从内逐级向外依次触发）会触发多次取决于嵌套和鼠标为准
+       mydiv.onmouseover=function(){
+
+            console.log('移入了 红')
+         }
+         mydiv.onmouseover=function(){
+
+          console.log('移入了蓝')
+           }
+
+       //不会触发多次
+           mydiv.onmouseenter=function(){
+
+           console.log('移入了 红')
+          }
+          mydiv.onmouseenter=function(){
+
+          console.log('移入了蓝')
+            }
+     
+       //鼠标移出
+      //会触发冒泡或者说（从内逐级向外依次触发） 会触发多次取决于嵌套和鼠标为准
+  
+        mydiv.onmouseout=function(){
+
+            console.log('移出 红')
+         }
+         mydiv.onmouseout=function(){
+
+          console.log('移出蓝')
+           }
+      //不会触发多次
+           mydiv.onmouseleave=function(){
+
+          console.log('移出 红')
+              }
+             mydiv.onmouseleave=function(){
+
+             console.log('移出蓝')
+            }
+    </script>
+</body>
+</html>

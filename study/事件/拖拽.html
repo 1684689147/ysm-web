@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+           
+        }
+        body{
+            position: relative;
+        }
+         #mydiv{
+              width: 100px;
+              height: 100px;
+              background-color: blueviolet;  
+              position: absolute;
+         }
+    </style>
+</head>
+<body>
+    <div id="mydiv"></div>
+    <script>
+       var mydiv=document.getElementById('mydiv');
+        mydiv.onmousedown=function(e){
+          var ev =e ||  window.event;
+          var xcha=ev.clientX-mydiv.offsetLeft;
+          var ycha=ev.clientY-mydiv.offsetTop;
+
+          document.onmousemove=function(e){
+            var ev =e ||  window.event;
+            mydiv.style.left= ev.clientX-xcha +'px';
+            mydiv.style.top= ev.clientY-ycha+'px';
+          }
+          document.onmouseup=function(){
+              //移动为空
+           document.onmousemove=null;
+           //鼠标放下
+           document.onmouseup=null;
+
+          }
+        }
+
+    </script>
+</body>
+</html>
