@@ -1,0 +1,151 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+ ul{
+	list-style: none;
+	display: inline-block;	
+}
+a{
+	text-decoration: none;
+}
+#con{
+	width: 1170px;
+	margin: 0 auto;
+	position: relative;
+}
+#con-content{
+	width: 64%;
+	display: inline-block;
+	float: left;
+}
+#con-content2{
+	display: inline-block;
+	width: 32%;
+	float: right;
+}
+ li{
+	display:inline-block;
+	margin-left: 5px;
+	cursor:pointer;
+}
+
+#top-left{
+	width: 50%;
+	display: block;
+	float: left;
+	padding: 19px 10px 19px 0px;
+	opacity: 0.5;
+}
+
+
+#topcontent{
+	width: 1170px;
+	height: 58px;
+	margin: 0 auto;
+	font-size: 10px;
+	
+}
+#top-right{
+	width: 47%;
+	float:right;
+	display: block;
+	padding: 19px 10px 19px 0px;
+	opacity: 0.5;
+}
+
+#r-img{
+	float: right;
+}
+#s1{
+	width: 100%;
+	height: 1px;
+	float: left;
+}
+.border {
+    border-top: 1px solid #cccccc;
+    /* background-color: #8C8C8C; */
+}
+#topnav{
+	display: block;
+}
+#header{
+	width: 100%;
+}
+#content{
+	width: 1170px;
+	margin: 0 auto;
+}
+#header-img{
+	background-color: #fff;
+	/*text-align: center;*/
+	position: relative;
+}
+#header-img>a>img{
+	position: absolute;
+	top: -10px;
+}
+#content{
+	display: flex;
+	justify-content: space-between;
+	flex-flow: nowrap;
+	padding: 35px 0px 35px 0px;
+}
+#c-nav{
+	line-height: 58px;
+	
+}
+#c-nav ul li{
+	margin-right: 20px;
+	 font-weight: bold;
+	 opacity: 0.6;
+}
+#c-nav ul li:hover{
+	opacity: 0.3;
+}
+#cart{
+	background-color: #f8f8f8;
+}
+
+#c-content{
+	width: 1170px;
+	margin: 0 auto;
+	padding: 90px 0px 90px 0px;
+}
+#c-content>ul>li>a{
+	color: #818181;
+}
+.big-title {
+    width: 100%;
+    height: 210px;
+    /* border: 1px solid red; */
+    background-color: #f8f8f8;
+}
+.title {
+    margin: 0 auto;
+    width: 1140px;
+    height: 210px;
+    /* border: 1px solid blue; */
+    padding: 43px 15px;
+    box-sizing: border-box;
+}
+.t-ul {
+    list-style: none;
+    color: #9a9a9a;
+    padding: 0;
+    margin-top: 30px;
+}
+.t-ul li {
+    font-size: 15px;
+    line-height: 17px;
+    font-weight: 300;
+    display: inline-block;
+}
+.t-a1 a {
+    color: #9a9a9a;
+    text-decoration: none;
+}
+.t-a2 a {
+    text-decoration: none;
+    color: black;
+}
