@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>html中6个div元素,每一个div元素的样式都是一个30*30像素的红色圆形.间隔20像素.点击任意一个红色圆形让其变为蓝色方框.并且需要1s的事件过度为30*30的蓝色方框   </title>
+      <style>
+         
+      </style>
+</head>
+<div id="div"></div>
+
+<body>
+
+    <script>
+   
+        var div = document.getElementsByTagName("div");
+        for(var i=0;i<div.length;i++){
+            div[i].style.display="inline-block";
+            div[i].style.marginLeft=15+"px";
+            div[i].style.width=30+'px';
+            div[i].style.height=30+'px';
+            div[i].style.backgroundColor= "red";
+            div[i].style.borderRadius="100%";
+            div[i].onclick=function(){
+                this.style.backgroundColor= "blue";
+                this.style.transition="1s";
+                this.style.borderRadius="";
+            }
+        }
+    
+        </script>
+
+</body>
+</html>
