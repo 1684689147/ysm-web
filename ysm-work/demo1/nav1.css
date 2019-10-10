@@ -1,0 +1,121 @@
+.nav1{
+	background-color: #333333;	
+	height: 65px;
+}
+.nav1 .center{
+	line-height: 65px;
+
+}
+.nav1 .center button{
+	width: 270px;
+	height: 65px;
+	background-color:#73b320;
+	border-width: 0;
+	box-sizing: border-box;
+	padding: 10px 60px;
+	line-height: 28px;
+}
+.nav1 .center button:hover{
+	background-color:#39B0FF;
+}
+.nav1 .center button img{
+	width: 25px;
+	height: 25px;
+	float: left;
+}
+.nav1 .center button span{
+	color: #FFFFFF;
+	font-size: 18px;
+	font-weight:bold;
+}
+.nav1 .center>ul{
+	width: 880px;
+	float: right;
+}
+.nav1 .center>ul>li{
+	position: relative;
+	float: left;
+	margin-right: 40px;
+}
+.nav1 .center>ul>li a{
+	color: #fff;
+	text-align: center;
+	display: block;
+	font-weight: 600;
+}
+.nav1 .center>ul>li a i{
+	display: inline-block;
+	width: 5px;
+	height: 5px;
+	border-right:2px solid #bfbfbf; 
+    border-bottom:2px solid #bfbfbf;
+    transform: rotate(45deg) translateY(-5px) translateX(3px);
+}
+.nav1 .center>ul>li>.left{
+	position:absolute;
+    background-color:#333333;
+    width: 200px;
+    left:-10px;
+    display:none;
+    z-index: 20;
+}
+.nav1 .center>ul>li:hover>ul{
+	display: block;
+}
+.nav1 .center>ul>li>.left>li{
+	width:100%;
+	height: 30px;
+	color: #FFFFFF;
+	line-height: 30px;
+	padding:0 10px;
+	box-sizing: border-box;
+}
+.nav1 .center>ul>li>.left>li a{
+	font-weight:300;
+	font-size: 13px;
+}
+.nav1 .center>ul>li>.left>li:hover{
+	background-color: #666666;
+	transform: 1s;
+}
+.nav1 .center>ul>li>.show{
+	position:absolute;
+    background-color:#333333;
+    display:none;
+    z-index: 20;
+    left: -120px;
+}
+.nav1 .center>ul>li:nth-child(3)>.show{
+	width:560px;
+}
+.nav1 .center>ul>li:nth-child(4)>.show{
+	width:450px;
+}
+.nav1 .center>ul>li>.show>ul{
+	float: left;
+}
+.nav1 .center>ul>li>.show>ul>li{
+	width:100%;
+	height: 30px;
+	color: #FFFFFF;
+	line-height: 30px;
+	padding:0 10px;
+	box-sizing:border-box;
+	margin-left: 10px;
+}
+.nav1 .center>ul>li>.show>ul>li a{
+	font-weight:300;
+	font-size: 13px;
+}
+.nav1 .center>ul>li>.show>ul>li a:hover{
+	color: #73B320;
+	transform: 1s;
+}
+.nav1 .center>ul>li>.show>ul>li a span{
+	color: #73B320;
+	display: inline-block;
+	width: 100%;
+	height: 30px;
+	text-align: left;
+	border-bottom: 1px solid #BFBFBF;
+}

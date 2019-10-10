@@ -1,0 +1,144 @@
+
+.footer .searc{
+    height: 108px;
+	background-color: #3b4348;
+    color: #fff;
+    padding: 30px 0;
+}
+.footer .searc .enev{
+	width:255px ;
+	position: relative;	
+}
+.footer .searc .enev ul{
+	margin-top: 10px;
+}
+.footer .searc .enev ul li{
+	float: left;
+}
+ .footer .searc .enev .text a{
+    font-size: 18px;
+    line-height: 12px;
+    margin-bottom: 0; 
+   color: #fff;
+
+   	display: block;
+    position: absolute;
+    bottom: -31px;
+    right: -20px;
+}
+.footer .searc .search-area {
+    width: 572px;
+    height: 50px;
+    float: left;
+    margin-left:260px;
+    position: relative;
+}
+.footer .searc .search-area input {
+    display: block;
+    float: left;
+    width: 520px;
+    border-width: 0;
+    height:68px;
+    outline: none;
+    font-size: 16px;
+    padding:0 20px;
+    box-sizing: border-box;
+    margin-bottom:10px ;
+}
+.footer.searc .search-area > div {
+    float: left;
+    width: 60px;
+    height: 60px;
+    background-color: #39b0ff;
+}
+.footer .searc .btn{
+	width: 115px;
+    height: 68px;
+    text-align: center;
+    padding: 0;
+    background-color: #73b320;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0;
+    position: absolute;
+    top:0px;
+    right: -36px;
+}
+.footer .picture{
+	float: right;
+}
+.footer .nav{
+	background-color: #313131;
+    padding: 70px 0;
+    width: 100%;
+    height: 345px;
+}
+.footer .nav ul{
+	float: left;
+	margin-right:119px;
+}
+.footer .nav ul li span{
+	display: inline-block;
+	width: 20px;
+	height: 2px;
+	background-color: #adadad;	
+}
+.footer .nav ul li a{
+	text-decoration: none;
+	color:  #adadad;
+	font-size: 16px;
+	padding-left: 10px;
+	line-height: 40px;
+}
+.footer  .nav ul li a:hover{
+	color: #39b0ff;
+    padding-left: 25px;
+}
+.footer .nav ul h2 a{
+    color: #fff;
+	font-size: 24px;
+	font-weight: 700;
+}
+.footer .nav .tex li i{ 
+	width:13px;
+	height: 13px;
+	background-color: #39b0ff;	
+}
+.footer .nav .tex li i:hover{ 
+	background-color: #28a745;
+}
+.footer .nav .tex li{
+	margin-top: 25px;
+}
+.footer .nav .tex li strong{ 
+	color: #fff;
+	font-weight: 700;
+	font-size: 15px;
+}
+.footer .nav .tex li strong:hover{ 
+	color: #28a745;	
+}
+.footer .nav .tex li b{
+	color: #bfbfbf;
+	font-size: 12px;
+}
+.footer .last{
+	background-color:#262626 ;
+    height: 92px;
+    width: 100%;
+}
+.footer .last .laster{
+	color: #adadad;
+    font-size: 13px;
+    padding: 30px 0;
+   line-height: 15px;
+}
+.footer .last .laster a{
+	color: #39b0ff
+}
+.footer .last .pic{
+	float: right;
+	margin-top:-47px;
+}

@@ -1,0 +1,200 @@
+
+/******************************************/
+.header{
+	background-color: #3b4348;
+}
+.header > .nav{
+	font-size: 13px;
+	padding: 15px 0;
+	height: 25px;
+	border-bottom: 1px solid #525d64;
+}
+.header>.nav .call{
+	float: left;
+	line-height: 25px;
+}
+.header>.nav .call li{
+	float: left;
+	margin-right: 15px;
+}
+.header>.nav .call li a{
+	display: block;
+}
+.header>.nav .call li a>div{
+	float: left;
+	padding: 6px;
+	background-color: #39b0ff;
+	margin-right: 10px;
+}
+.header>.nav .call li a>div>img{
+	width: 12px;
+}
+.header>.nav .call li a>div>i{
+	display: block;
+	width: 13px;
+	height: 13px;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	
+}
+.header>.nav .call li:nth-child(1) a>div>i{
+	background-image: url(img/haed/icon/xinfeng-0.png);
+}
+.header>.nav .call li:nth-child(2) a>div>i{
+	background-image: url(img/haed/icon/dianhua-0.png);
+}
+.header>.nav .call li a>h6{
+	float: left;
+	color: white;
+	line-height: 25px;
+	margin-right: 5px;
+}
+.header>.nav .call li a>span{
+	float: left;
+	color: #bfbfbf;
+	line-height: 25px;
+}
+.header>.nav .call li a:hover > h6{
+	color: #76b320;
+	transition: 1s;
+}
+.header>.nav .call li a:hover > span{
+	color: #fff;
+	transition: 1s;
+}
+.header>.nav .call li a:hover > div{
+	background-color: #fff;
+	transition: 1s;
+}
+.header>.nav .call li:nth-child(1) a:hover > div>i{
+	transition: 1s;
+	background-image: url(img/haed/icon/xinfeng-1.png);
+}
+.header>.nav .call li:nth-child(2) a:hover > div>i{
+	transition: 1s;
+	background-image: url(img/haed/icon/dianhua-1.png);
+}
+.header>.nav  .menu{
+	float:right;
+} 
+.header>.nav  .menu li{
+	/* padding往左15px */
+	padding-left:20px ;
+	float: left;
+	position: relative;
+} 
+.header>.nav  .menu a{
+	color: #bfbfbf;
+	line-height: 25px;
+} 
+.header>.nav  .menu a:hover{
+	color: white;
+	transition: 1s;
+} 
+.header>.nav  .menu  a i{
+	display: inline-block;
+	width: 5px;
+	height: 5px;
+	/* 旋转45度  y周往上3px*/
+	transform: rotate(45deg) translateY(-3px);
+	border-right: 2px solid #bfbfbf;
+	border-bottom: 2px solid #bfbfbf;
+} 
+.header>.nav  .menu li > ul{
+	position: absolute;
+	background-color: #262626;
+	width:100px;
+	top:25px;
+	right: 0;
+	display: none;
+	/* 下拉框在绿色上面 */
+	z-index: 20px;
+} 
+.header>.nav  .menu li:hover > ul  {
+	display: block;
+} 
+.header>.nav  .menu li > ul  li{
+	width:100px;
+	line-height: 2;
+    text-align: center
+} 
+.header>.nav  .menu li > ul a{
+	color: white;
+} 
+/******************************************/
+.header .search{
+	height: 60px;
+	padding: 30px 0;
+}
+.header .search >div >img{
+   margin-top: 7px;
+   float: left;
+}
+.header .search .search-area{
+	width: 572px;
+	height: 60px;
+	float: left;
+	margin-left: 100px;
+}
+.header .search .search-area input{
+	float: left;
+	display: block;
+}
+.header .search .search-area input{
+	float: left;
+	display: block;
+
+}
+.header .search .search-area input{
+	float: left;
+	display: block;
+	width: 512px;
+	height: 60px;
+	/* 除掉自身的边框*/
+	border-width: 0;
+	outline: none;
+	font-size: 16px;
+	padding: 0 20px;
+	/* 关于和模型 边距属于自身的 */
+	/* 通过从已设定的宽度和高度分别减去边框和内边距才能得到内容的宽度和高度。 */
+    box-sizing: border-box; 
+}
+.header .search .search-area >div{
+	float: left;
+	width: 60px;
+	height: 60px;
+	background-color: #39b0ff;
+}
+.header .search .search-area >div img{
+	width: 100%;
+	display: block;
+	margin-top: 4px;
+}
+.header .search button{
+	width: 144px;
+	height: 60px;
+	background-color: #76b320;
+	color: white;
+	font-size: 16px;
+	float: right;
+	border-width: 0px;
+	position: relative;
+	
+}
+.header .search button i{
+	position: absolute;
+	top:14px;
+	right: 34px;
+	width: 18px;
+	height: 18px;
+	font-style: normal;
+	line-height: 20px;
+	border-radius: 50%;
+	background-color: #3b4348;
+	color: #fff;
+}
+.header .search button:hover{
+  transition: background-color 1s;
+	background-color:#39b0ff;
+	
+}

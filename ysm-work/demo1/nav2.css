@@ -1,0 +1,44 @@
+.nav2{
+width: 100%;
+height: 114px;
+background-color: #73b320;
+}
+.nav2 .center{
+	text-align: center;
+}
+.nav2 .for{
+	height: 100px;
+	display: inline-block;
+}
+.nav2 .for div{
+	display: inline-block;
+	vertical-align:bottom;
+}
+.nav2 .for div img{
+	width: 60px;
+	height: 60px;
+	margin-top: 10px;
+  }
+.nav2 .for>div h4{
+	margin-bottom: 0;
+	margin-top: 15px;
+	font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    color: #262626;
+}
+.nav2 .for>div p{
+	margin-top: 0;
+	line-height: 6px;
+	color: #fff;
+	text-transform: capitalize;
+	font-size: 0.9rem;
+      line-height: 1;
+}
+.nav2 .for div:nth-child(2){
+line-height: 40px;
+padding-right: 55px;
+padding-left: 5px;
+}
+			.nav2 .for div:nth-child(1){
+				vertical-align:bottom;
+			}
