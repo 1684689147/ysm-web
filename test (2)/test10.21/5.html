@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <!-- 用户输入验证码,无论大小写输入都会正确的方法,显示在页面id为h1的元素中,显示在页面id为h4的元素中 -->
+        <h5 id="h"></h5>
+        <input type="text" id="in">
+        <script>
+              var h=document.getElementById('h');
+              var a=prompt('输入正确的验证码 ')
+               var b =a.toUpperCase();
+               if(b=ABC){
+                h.innerHTML='正确'; 
+               }else{
+                h.innerHTML='错误';
+               }
+            
+   
+    </script>
+</body>
+</html>

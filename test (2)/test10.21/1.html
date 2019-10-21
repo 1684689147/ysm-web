@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- .将两个字符利用字符串对象的方法变成一个字符,显示在页面id为h1的元素中 -->
+    <h1 id="h1"></h1>
+    <script>
+        var h1=document.getElementById('h1');
+        var a=new String('你好');
+        var b=new String('好');
+        var c = a.concat(b);
+         h1.innerHTML=c;
+    </script>
+</body>
+</html>

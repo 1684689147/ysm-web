@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <!-- 一张图片是一个相对路径img/head/,icon/1.jpg,我只需要拿到它的文件夹目录后显示在页面id为h4的元素中 -->
+       
+   <img src="img/head/icon/1.jpg" id="img"/>
+		<h4 id="h"></h4>
+		<script type="text/javascript">
+			var img=document.getElementById("img");
+			var h=document.getElementById("h");
+			h4.innerHTML=img.src;
+
+    </script>
+</body>
+</html>
