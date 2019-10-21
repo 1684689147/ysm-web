@@ -8,19 +8,17 @@
 </head>
 <body>
         <!-- 用户输入验证码,无论大小写输入都会正确的方法,显示在页面id为h1的元素中,显示在页面id为h4的元素中 -->
-        <h5 id="h"></h5>
-        <input type="text" id="in">
-        <script>
-              var h=document.getElementById('h');
-              var a=prompt('输入正确的验证码 ')
-               var b =a.toUpperCase();
-               if(b=ABC){
-                h.innerHTML='正确'; 
-               }else{
-                h.innerHTML='错误';
-               }
-            
-   
-    </script>
+        
+                <h5 id="h5"></h5>
+                <script type="text/javascript">
+                    var a = prompt("请输入验证码:ABC");
+                    var num="Abc";
+                    if(num.toLowerCase==a.toLowerCase||num.toUpperCase==a.toUpperCase){
+                        alert("输入正确");
+                    }
+                    var h5=document.getElementById("h5");
+                    h5.innerHTML=a;
+                </script>
+       
 </body>
 </html>
