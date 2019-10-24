@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<style>
+
+		</style>
+	</head>
+
+	<body>
+		<div id="">
+			花花,帅杰,小粉,红红,丢丢,臭臭,笨笨
+		</div>
+		<input type="text" name="txt" id="txt" value="" />
+		<input type="button" name="btn" id="btn" value="签到"/>
+		<div id="mydiv">
+			
+		</div>
+		<div id="mydiv1">
+			
+		</div>
+		<script type="text/javascript">
+			var txt=document.getElementById("txt");
+			var btn=document.getElementById("btn");
+			var mydiv=document.getElementById("mydiv");
+			var mydiv1=document.getElementById("mydiv1");
+			var na=["花花","帅杰","小粉","红红","丢丢","臭臭","笨笨"];
+			var nna=[];
+			btn.onclick=function(){
+				var tx=na.indexOf(txt.value);
+				if(txt.value!=na[tx]){
+					alert("不存在此名字");
+				}else{
+					nna.length>=na.length?alert("都已签到"):txt.value!=nna[nna.indexOf(txt.value)]?nna.push(txt.value):alert("已签到");
+				}
+				nna.length!=na.length?mydiv1.innerText=("还有"+(na.length-nna.length)+"位未签到"):mydiv1.innerText="已经全部签到完成";
+				mydiv.innerText="已签到："+nna;
+			}
+			
+		</script>
+	</body>
+
+</html>
