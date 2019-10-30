@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="../jQuery/jquery-1.10.2/jquery.min.js">
+			
+		</script>
+		<style type="text/css">
+			body{
+				margin: 0;
+				padding: 0;
+			}
+			li{
+			  float: left;
+			  width: 80px;
+		      height: 80px;
+		      border-radius: 50%;
+		      /*background-color: darkblue;*/
+		      list-style: none;
+		      margin-left: 10px;
+			}
+			.li1{
+				width: 100px;
+				height: 100px;
+				border-radius: 50%;
+				display: inline-block;
+				/*background-color: darkorange;*/
+				
+			}
+
+		</style>
+	</head>
+	<body>
+	
+			<ul>
+				<li class="li1"></li>
+				<li ></li>
+				<li ></li>
+				<li ></li>
+				<li ></li>
+				<li ></li>
+				<li ></li>
+			</ul>
+
+		<script type="text/javascript">
+			var arr=["darkorange","red","blue","yellow","aqua","green"];
+			//获取li的下标值  each遍历
+			  $("li").each(function(i){
+            //下标值分别给arr[i] 分别调取arr数组里面的颜色
+				$(this).css("backgroundColor",arr[i]);
+	       });
+	       
+	       $(".li1").siblings().hide();
+				$(".li1").click(function(){
+					$(this).siblings().toggle(200);
+				})
+
+	       $("li").click(function(){
+            $("body").css("background-color",$(this).css("background-color"));
+          
+        })
+
+          
+           
+		</script>
+	</body>
+</html>
