@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="jquery-1.10.2/jquery.min.js"></script>
+    <style>
+        p{
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+          <span >购买:</span>
+            <input type="checkbox" name="" id="h"  >
+            <span>华为mate20</span>
+            <input type="number" id="num1" value="1">
+            <span>单价:<p id="dan1">520</p></span>
+            <span>合计:<p id="nu1">0</p></span>
+        <br/ >
+        	<span >购买:</span>
+            <input type="checkbox" name="" id="x">
+            <span>小米8</span></td>
+            <input type="number" id="num2"value="1" >
+            <span>单价:<p id="dan2">250</p></span>
+            <span>合计:<p id="nu2">0</p></span>
+        <br/ >
+        	
+           <span>合计件数:<p id="num">0</p></span>
+             <br/ >
+            <span>总价：<p id="nu">0</p></span>
+          
+        </tr>
+    </table>
+    <script>
+    	//点击数量算出合计
+        $('#num1,#h').change(function(){
+        	//点击华为购买按钮时
+            if($('#h').is(':checked') == true){
+            	//合计=数量*单价
+                $('#nu1').html($('#num1').val()*$('#dan1').html());
+            }else{
+                $('#nu1').html('');
+            }     
+        })
+
+        $('#num2,#x').change(function(){
+            if($('#x').is(':checked') == true){
+            	
+                $('#nu2').html($('#num2').val()*$('#dan2').html());
+            }else{
+                $('#nu2').html('');
+            }
+        })
+        $('#h,#x,#num1,#num2').change(function(){
+        	//点击购买按钮时
+            if($('#h').is(':checked') == true && $('#x').is(':checked') == true){
+                $('#num').html(
+                	parseInt($('#num1').val())+parseInt($('#num2').val())
+                	);
+                $('#nu').html(
+                	parseInt($('#nu1').html())+parseInt($('#nu2').html())
+                	);
+            }else if($('#h').is(':checked') == true){
+                $('#nu').html(
+                	parseInt($('#nu1').html()));
+                $('#num').html(
+                	parseInt($('#num1').val()
+                	)
+                );
+            }else if($('#x').is(':checked') == true){
+                $('#num').html(
+                	parseInt($('#num2').val())
+                	);
+                $('#nu').html(
+                	parseInt($('#nu2').html())
+                	);
+            }else{
+                $('#num').html('0');
+                $('#nu').html('0');
+            };
+        });
+    </script>
+
